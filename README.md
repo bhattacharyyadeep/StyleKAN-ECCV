@@ -10,14 +10,16 @@
 We recommend Python 3.10+ and CUDA 11.8+.
 
 ```bash
-# create and activate a virtual environment (conda example)
-conda create -y -n stylekan python=3.10
-conda activate stylekan
+pyenv install 3.10.13
 
-# (optional) set CUDA if needed, e.g. export CUDA_HOME=/usr/local/cuda
-# install PyTorch that matches your CUDA
-# see https://pytorch.org for the exact command for your system
+# create a virtual environment
+pyenv virtualenv 3.10.13 stylekan
+
+# activate the environment
+pyenv activate stylekan
+
+# install PyTorch compatible with CUDA 11.8
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
-# install other requirements
+# install other dependencies
 pip install -r requirements.txt
