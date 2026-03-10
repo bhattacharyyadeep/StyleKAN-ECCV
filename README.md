@@ -27,4 +27,16 @@ pip install -r requirements.txt
 
 ## 2. Training
 
-We train our model just of DUTS-Training datasets to save the checkpoints you use the DUTS-TE to evaluate and save for the best checkpoint
+We train our model just of DUTS-Training datasets to save the checkpoints you use the DUTS-TE to evaluate and save the best checkpoint.
+
+data_path/
+└── DUTS/
+    ├── train/
+    │   ├── image/
+    │   │   ├── 0001.jpg
+    │   │   ├── 0002.jpg
+    │   │   └── ...
+    │   └── mask/
+    │       ├── 0001.png
+    │       ├── 0002.png
+    │       └── ...
