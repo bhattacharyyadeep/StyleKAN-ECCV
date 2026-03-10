@@ -65,23 +65,7 @@ python3 test_vsod.py # for video based datasets
 
 The following qualitative comparisons show the **ground truth segmentation overlays** and **StyleKAN predictions** on several DAVIS sequences.
 
----
 
-### Breakdance Sequence
-
-| Ground Truth | StyleKAN Prediction |
-|--------------|--------------------|
-| <img src="assets/breakdance_gt_overlay.gif" width="350"> | <img src="assets/breakdance_overlay.gif" width="350"> |
-
----
-
-### Camel Sequence
-
-| Ground Truth | StyleKAN Prediction |
-|--------------|--------------------|
-| <img src="assets/camel_gt_overlay.gif" width="350"> | <img src="assets/camel_overlay.gif" width="350"> |
-
----
 
 ### Dog Sequence
 
@@ -96,6 +80,21 @@ The following qualitative comparisons show the **ground truth segmentation overl
 | Ground Truth | StyleKAN Prediction |
 |--------------|--------------------|
 | <img src="assets/car-roundabout_gt_overlay.gif" width="350"> | <img src="assets/car-roundabout_overlay.gif" width="350"> |
+
+---
+
+### Camel Sequence
+
+| Ground Truth | StyleKAN Prediction |
+|--------------|--------------------|
+| <img src="assets/camel_gt_overlay.gif" width="350"> | <img src="assets/camel_overlay.gif" width="350"> |
+
+---
+### Breakdance Sequence
+
+| Ground Truth | StyleKAN Prediction |
+|--------------|--------------------|
+| <img src="assets/breakdance_gt_overlay.gif" width="350"> | <img src="assets/breakdance_overlay.gif" width="350"> |
 
 ---
 
