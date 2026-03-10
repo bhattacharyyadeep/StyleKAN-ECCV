@@ -7,7 +7,7 @@
 
 ## 1. Environment Setup
 
-We recommend Python 3.10+ and CUDA 11.8+.
+We recommend Python 3.10+ and CUDA 11.8+. Also clone the dinov3 from github. and place it in the directory where your codes are present.
 
 ```bash
 pyenv install 3.10.13
@@ -51,3 +51,11 @@ data_path/
             ├── 0002.png
             └── ...
 ```
+```bash
+# This is the training for the model.
+python3 train.py
+
+# Once the checkpoint is saved in ./runs test it for the setting the datapaeth for Video based datasets and for the Image based datasets using the saved checkpoint.
+
+python3 test_image.py # for image based datasets
+python3 test_vsod.py # for video based datasets
