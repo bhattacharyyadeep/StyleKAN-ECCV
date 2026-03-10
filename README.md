@@ -1,2 +1,6 @@
 # StyleKAN-ECCV
 Salient Object Detection via Stylized Fusion and Kolmogorov-Arnold Network Decoding
+
+# Abstract
+
+Salient object detection benefits from the strong semantics of vision foundation models, yet existing feature fusion schemes and decoders often rely on computationally intensive attention mechanisms, and struggle to capture non-linear transitions essential for precise saliency maps. In this paper, we introduce StyleKAN, an encoder–decoder framework that couples stylized feature fusion with Kolmogorov–Arnold Network (KAN) decoding. Starting from a partially fine-tuned Transformer backbone, we design an adaptive feature refinement module that employs two single-layer heads: a local pointwise channel mixer and a global token mixer that injects long‑range context. A stylization layer fuses the local and global streams via affine modulation, followed by aggregating the multi‑level features through a channel‑wise fusion module that performs bottom‑up residual integration. A KAN decoder then produces the pixel-wise saliency map. Extensive experiments on benchmark datasets demonstrate that StyleKAN delivers strong accuracy-efficiency trade-offs and consistent performance gains over strong baselines.
