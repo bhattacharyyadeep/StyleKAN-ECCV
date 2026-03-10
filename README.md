@@ -23,3 +23,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 
 # install other dependencies
 pip install -r requirements.txt
+
+## 2. Training
+
+We train our model just of DUTS-Training datasets to save the checkpoints you use the DUTS-TE to evaluate and save for the best checkpoint
