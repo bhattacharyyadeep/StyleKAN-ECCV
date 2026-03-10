@@ -1,6 +1,23 @@
-# StyleKAN-ECCV
-Salient Object Detection via Stylized Fusion and Kolmogorov-Arnold Network Decoding
+# StyleKAN: Salient Object Detection via Stylized Fusion and KAN Decoding
 
-# Abstract
+> **Anonymous ECCV Submission**  
+> This repository contains the training and evaluation code for StyleKAN, our image-only saliency model that generalizes to VSOD benchmarks without any video supervision.
 
-Salient object detection benefits from the strong semantics of vision foundation models, yet existing feature fusion schemes and decoders often rely on computationally intensive attention mechanisms, and struggle to capture non-linear transitions essential for precise saliency maps. In this paper, we introduce StyleKAN, an encoder–decoder framework that couples stylized feature fusion with Kolmogorov–Arnold Network (KAN) decoding. Starting from a partially fine-tuned Transformer backbone, we design an adaptive feature refinement module that employs two single-layer heads: a local pointwise channel mixer and a global token mixer that injects long‑range context. A stylization layer fuses the local and global streams via affine modulation, followed by aggregating the multi‑level features through a channel‑wise fusion module that performs bottom‑up residual integration. A KAN decoder then produces the pixel-wise saliency map. Extensive experiments on benchmark datasets demonstrate that StyleKAN delivers strong accuracy-efficiency trade-offs and consistent performance gains over strong baselines.
+---
+
+## 1. Environment Setup
+
+We recommend Python 3.10+ and CUDA 11.8+.
+
+```bash
+# create and activate a virtual environment (conda example)
+conda create -y -n stylekan python=3.10
+conda activate stylekan
+
+# (optional) set CUDA if needed, e.g. export CUDA_HOME=/usr/local/cuda
+# install PyTorch that matches your CUDA
+# see https://pytorch.org for the exact command for your system
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+# install other requirements
+pip install -r requirements.txt
