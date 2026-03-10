@@ -67,7 +67,7 @@ The following examples present qualitative comparisons between the ground truth 
 
 | Example | Ground Truth | Model Prediction |
 |--------|--------------|------------------|
-| Video 1 | ![](breakdance_gt_overlay.gif) | ![](breakdance_model_pred.gif) |
-| Video 2 | ![](camel_gt_overlay.gif) | ![](camel_model_pred.gif) |
-| Video 3 | ![](car-roundabout_gt_overlay.gif) | ![](car-roundabout_model_pred.gif) |
-| Video 4 | ![](dog_gt_overlay.gif) | ![](dog_model_pred.gif) |
+| Video 1 | [gt1.mp4](breakdance_gt_overlay.mp4) | [pred1.mp4](breakdance_model_pred.mp4) |
+| Video 2 | [gt2.mp4](camel_gt_overlay.mp4) | [pred2.mp4](camel_model_pred.mp4) |
+| Video 3 | [gt3.mp4](car-roundabout_gt_overlay.mp4) | [pred3.mp4](car-roundabout_model_pred.mp4) |
+|Video 4 | [gt4.mp4](dog_gt_overlay.mp4) | [pred4.mp4](dog_model_pred.mp4) |
