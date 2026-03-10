@@ -23,6 +23,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 
 # install other dependencies
 pip install -r requirements.txt
+```
 
 ## 2. Training
 
