@@ -7,9 +7,6 @@ from scipy.special import comb as binom_coeff  # for Bernstein basis
 import math
 
 
-# ────────────────────────────────────────────────
-#  MLP utilities (unchanged)
-# ────────────────────────────────────────────────
 
 class LN(nn.Module):
     def __init__(self, dim, epsilon=1e-5):
@@ -183,9 +180,6 @@ class TemporalAdapter(nn.Module):
         return x + gate * out
 
 
-# ────────────────────────────────────────────────
-#  Bernstein Polynomial basis (adapted from kan_bernstein.py)
-# ────────────────────────────────────────────────
 
 class BernsteinBasis(nn.Module):
     def __init__(self, order=5):
@@ -245,9 +239,6 @@ class BernsteinKANHead(nn.Module):
         return base_out + bern_out
 
 
-# ────────────────────────────────────────────────
-#  DPT Head – now using Bernstein-based final layer
-# ────────────────────────────────────────────────
 
 class DPTHead(nn.Module):
     def __init__(
@@ -365,10 +356,6 @@ class FeatureFusionBlock(nn.Module):
             x = self.bn2(x)
         return x
 
-
-# ────────────────────────────────────────────────
-#  Main DPT model
-# ────────────────────────────────────────────────
 
 class DPT(nn.Module):
     def __init__(
