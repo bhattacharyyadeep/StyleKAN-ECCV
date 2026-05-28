@@ -1,6 +1,6 @@
 # StyleKAN: Salient Object Detection via Stylized Fusion and KAN Decoding
 
-> **Anonymous ECCV Submission**  
+> **Anonymous BMVC Submission**  
 > This repository contains the training and evaluation code for StyleKAN, our image-only saliency model that generalizes to VSOD benchmarks without any video supervision.
 
 ---
